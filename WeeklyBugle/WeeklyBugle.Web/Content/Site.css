@@ -1,4 +1,8 @@
-﻿body {
+﻿@font-face {
+    src:url('../fonts/AnticDidone-Regular.ttf');
+    font-family: 'AnticFont';
+}
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -21,4 +25,40 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+h1.indexHeader {
+    font-size: 54px;
+    font-family: AnticFont;
+    
+}
+p.indexSubHeader{
+    font-family:'Microsoft Himalaya';
+    font-size: 20px;
+}
+
+p.featured{
+    font-family:Impact;
+    font-size: 40px;
+}
+.whole{
+    padding: 5px;
+}
+.main {
+    display: flex;
+   justify-content: space-between;
+}
+
+.bigarticle img {
+    
+    width: 100%;
+}
+
+.mainleftcolumn {
+    margin: 5px;
+    width: 75%;
+    
+}
+.mainrightcolumn{
+    width: 25%;
+    margin: 5px;
 }
