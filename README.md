@@ -1,0 +1,2 @@
+# WeeklyBugalRep
+Newspaper? maybe
