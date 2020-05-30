@@ -1,2 +1,2 @@
-# WeeklyBugalRep
+# WeeklyBugleRep
 Newspaper? maybe
