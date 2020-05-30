@@ -15,7 +15,7 @@ namespace WeeklyBugle.Web.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Linus's Marriage Status";
 
             return View();
         }
