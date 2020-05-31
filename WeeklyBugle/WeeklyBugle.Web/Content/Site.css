@@ -34,6 +34,11 @@ textarea {
     font-family: 'Antic Didone';
 }
 
+.spantext{
+    font-family: Impact;
+    font-size: medium;
+}
+
 .banner {
     width: 100%;
     display: block;
@@ -93,11 +98,27 @@ p.featured{
     display: flex;
    justify-content: space-between;
 }
-
-.bigarticle img {
+.bigarticlecolumns{
+    display: flex;
     
-    width: 100%;
+    flex-direction: row;
 }
+.bigarticleleft {
+   
+    width:60%;
+    margin: 5px;
+    
+}
+    .bigarticleleft > .bigarticleimg img {
+       width: 95%;
+    }
+.bigarticlerightcolumn{
+    width:40%;
+    margin: 0 0 0 0;
+    padding: 0px;
+}
+
+
 
 .mainleftcolumn {
     margin: 5px;
@@ -110,6 +131,7 @@ p.featured{
 }
 .leftcolumntext{
     margin: 10px;
+    font-size: 20px;
 }
 
 .rightcolumntext{
