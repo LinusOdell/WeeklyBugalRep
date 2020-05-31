@@ -22,72 +22,12 @@ body {
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
+/*Basic shit*/
 input,
 select,
 textarea {
     max-width: 280px;
 }
-    
-.HeaderTextStlye {
-    font-size: 5vw;
-    color: ghostwhite;
-    font-family: 'Antic Didone';
-
-}
-.tex2style {
-    font-size: 0.6vw;
-    color: ghostwhite;
-    font-family: 'Antic Didone';
-    opacity:0;
-}
-.spantext {
-    font-family: Impact;
-    font-size: medium;
-    opacity:0;
-}
-
-.banner {
-    width: 100%;
-    height: 60%;
-    display: block;
-    position: relative;
-    display: inline-block; /* Make the width of box same as image */
-}
-
-    .banner > .headerbanner {
-
-        width: 100%;
-        height:60%;
-        display: block;
-        height: 75%;
-        padding: 0px;
-    }
-
-
-    .banner .text {
-        
-        position: absolute;
-        z-index: 999;
-        margin: 15px;
-        left: 0;
-        right: 0;
-        top: 20%; /* Adjust this value to move the positioned div up and down */
-        width: 100%;
-        text-align: left;
-    }
-    .banner .text2 {
-        position: absolute;
-        z-index: 999;
-        margin: 15px;
-        left: 0;
-        right: 0;
-        top: 40%; /* Adjust this value to move the positioned div up and down */
-        width: 100%;
-        text-align: left;
-         opacity:0;
-
-    }
-
 .leadcustom{
     margin: 0px;
     padding: 0px;
@@ -96,9 +36,6 @@ textarea {
 .leadcustom > .lead {
 
 }
-  
-  
-
     h1.indexHeader {
         font-size: 65px;
         font-family: AnticFont;
@@ -109,10 +46,6 @@ p.indexSubHeader{
     font-size: 20px;
 }
 
-p.featured{
-    font-family:Impact;
-    font-size: 40px;
-}
 .whole{
     padding: 0px;
 }
@@ -120,46 +53,13 @@ p.featured{
     display: flex;
    justify-content: space-between;
 }
-   
-.bigarticle img {
-       width: 98%;
-    }
-.mainleftcolumn {
-    flex-grow: 3;
-    margin: 5px;
-    width: 75%;
-    
-}
-.mainrightcolumn{
-    flex-grow: 2;
-    width: 25%;
-    margin: 5px;
-}
-.leftcolumntext{
-    margin: 10px;
-    font-size: 20px;
-}
-
-.rightcolumntext{
-    margin: 10px;
-}
-.bottomarticles{
-    margin: 10px;
-}
-.otherarticlebody{
-    margin: 8px;
-}
-
+/*---------------------------------*/
 
 /* Hover Animations*/
  #bannerheadertext:hover{
      display:none;
      opacity:0;
  }
-
-
-
-
 #DivForHoverItem {
     height: 50px;
     width: 300px;
@@ -168,7 +68,98 @@ p.featured{
 #HiddenText {
     display: none;
 }
-
 #DivForHoverItem:hover #HiddenText {
     display: block;
 }
+/*---------------------------------*/
+
+/*Header CSS*/
+.HeaderTextStlye {
+    font-size: 5vw;
+    color: ghostwhite;
+    font-family: 'Antic Didone';
+}
+.tex2style {
+    font-size: 0.6vw;
+    color: ghostwhite;
+    font-family: 'Antic Didone';
+    opacity: 0;
+}
+.spantext {
+    font-family: Impact;
+    font-size: medium;
+    opacity: 0;
+}
+.banner {
+    width: 100%;
+    height: 60%;
+    display: block;
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
+}
+    .banner > .headerbanner {
+        width: 100%;
+        height: 60%;
+        display: block;
+        height: 75%;
+        padding: 0px;
+    }
+    .banner .text {
+        position: absolute;
+        z-index: 999;
+        margin: 15px;
+        left: 0;
+        right: 0;
+        top: 20%; /* Adjust this value to move the positioned div up and down */
+        width: 100%;
+        text-align: left;
+    }
+/*---------------------------------*/
+
+
+/*Two Main Columns*/
+        /*Main Right Column*/
+            .mainrightcolumn {
+                flex-grow: 3;
+                width: 25vw;
+                margin: 5px;
+                border-left: 1px solid black;
+                border-top: 1px solid black;
+                background-color: lightgrey;
+            }
+            .rightcolumntext {
+    margin: 10px;
+}
+        /*Main Left Column*/
+            .mainleftcolumn {
+                flex-grow: 4;
+                margin: 5px;
+                width: 75%;
+            }
+            .leftcolumntext {
+                margin: 10px;
+                font-size: 20px;
+            }
+    /*Other Articles Side Bar*/
+            .otherarticlebody {
+                margin: 8px;
+            }
+    /*Big Articles Picture Row*/
+        * {
+            box-sizing: border-box;
+        }
+        .picrow {
+            display: flex;
+        }
+        .bigarticlepics {
+            flex: 33.33%;
+            padding: 5px;
+            width: 100%;
+        }
+/*---------------------------------*/
+
+/*bottom articles*/
+        .bottomarticles {
+            margin: 10px;
+        }
+/*---------------------------------*/
