@@ -55,7 +55,7 @@ p.indexSubHeader{
 }
 /*---------------------------------*/
 
-/* Hover Animations*/
+/* Hover Animations for header and banner*/
  #bannerheadertext:hover{
      display:none;
      opacity:0;
