@@ -27,9 +27,9 @@ select,
 textarea {
     max-width: 280px;
 }
-
+    
 .HeaderTextStlye {
-    font-size: 110px;
+    font-size: 8vw;
     color: ghostwhite;
     font-family: 'Antic Didone';
 }
@@ -49,19 +49,17 @@ textarea {
         padding: 0px;
     }
 
-        
-.banner .text {
-    position: absolute;
-    z-index: 999;
-    margin: 15px;
-    left: 0;
-    right: 0;
-    top: 20%; /* Adjust this value to move the positioned div up and down */
-    width: 100%;
-    text-align: left;
-    
-    
-}
+
+    .banner .text {
+        position: absolute;
+        z-index: 999;
+        margin: 15px;
+        left: 0;
+        right: 0;
+        top: 30%; /* Adjust this value to move the positioned div up and down */
+        width: 100%;
+        text-align: left;
+    }
 
 .leadcustom{
     margin: 0px;
