@@ -29,18 +29,26 @@ textarea {
 }
     
 .HeaderTextStlye {
-    font-size: 8vw;
+    font-size: 5vw;
     color: ghostwhite;
     font-family: 'Antic Didone';
-}
 
-.spantext{
+}
+.tex2style {
+    font-size: 0.6vw;
+    color: ghostwhite;
+    font-family: 'Antic Didone';
+    opacity:0;
+}
+.spantext {
     font-family: Impact;
     font-size: medium;
+    opacity:0;
 }
 
 .banner {
     width: 100%;
+    height: 60%;
     display: block;
     position: relative;
     display: inline-block; /* Make the width of box same as image */
@@ -49,6 +57,7 @@ textarea {
     .banner > .headerbanner {
 
         width: 100%;
+        height:60%;
         display: block;
         height: 75%;
         padding: 0px;
@@ -56,14 +65,27 @@ textarea {
 
 
     .banner .text {
+        
         position: absolute;
         z-index: 999;
         margin: 15px;
         left: 0;
         right: 0;
-        top: 30%; /* Adjust this value to move the positioned div up and down */
+        top: 20%; /* Adjust this value to move the positioned div up and down */
         width: 100%;
         text-align: left;
+    }
+    .banner .text2 {
+        position: absolute;
+        z-index: 999;
+        margin: 15px;
+        left: 0;
+        right: 0;
+        top: 40%; /* Adjust this value to move the positioned div up and down */
+        width: 100%;
+        text-align: left;
+         opacity:0;
+
     }
 
 .leadcustom{
@@ -98,34 +120,18 @@ p.featured{
     display: flex;
    justify-content: space-between;
 }
-.bigarticlecolumns{
-    display: flex;
-    
-    flex-direction: row;
-}
-.bigarticleleft {
    
-    width:60%;
-    margin: 5px;
-    
-}
-    .bigarticleleft > .bigarticleimg img {
-       width: 95%;
+.bigarticle img {
+       width: 98%;
     }
-.bigarticlerightcolumn{
-    width:40%;
-    margin: 0 0 0 0;
-    padding: 0px;
-}
-
-
-
 .mainleftcolumn {
+    flex-grow: 3;
     margin: 5px;
     width: 75%;
     
 }
 .mainrightcolumn{
+    flex-grow: 2;
     width: 25%;
     margin: 5px;
 }
@@ -142,4 +148,27 @@ p.featured{
 }
 .otherarticlebody{
     margin: 8px;
+}
+
+
+/* Hover Animations*/
+ #bannerheadertext:hover{
+     display:none;
+     opacity:0;
+ }
+
+
+
+
+#DivForHoverItem {
+    height: 50px;
+    width: 300px;
+    background-color: transparent;
+}
+#HiddenText {
+    display: none;
+}
+
+#DivForHoverItem:hover #HiddenText {
+    display: block;
 }
