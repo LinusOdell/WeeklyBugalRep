@@ -181,6 +181,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\greek-vase.png" />
+    <Content Include="Content\images\5e6b0b1066796.png" />
+    <Content Include="Content\images\markus-spiske-blLAdy8OQxU-unsplash.jpg" />
+    <Content Include="Content\images\mason-field-OppGpuSZF-k-unsplash.jpg" />
     <Content Include="Content\images\websBig1.png" />
     <Content Include="Content\images\websBig2.png" />
     <Content Include="Content\readme.txt" />

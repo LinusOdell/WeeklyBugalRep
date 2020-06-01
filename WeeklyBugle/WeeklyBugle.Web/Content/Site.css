@@ -5,7 +5,7 @@
 body {
     padding-top: 0px;
     padding-bottom: 20px;
-    background: url('../Content/texture.png') repeat 0 0;
+   
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -49,11 +49,9 @@ p.indexSubHeader{
 .whole{
     padding: 0px;
 }
-.main {
-    display: flex;
-   justify-content: space-between;
-}
+
 /*---------------------------------*/
+
 
 /* Animations for header and banner*/
 
@@ -121,48 +119,26 @@ p.indexSubHeader{
 /*---------------------------------*/
 
 /*Two Main Columns*/
-        /*Main Right Column*/
-            .mainrightcolumn {
-                flex-grow: 3;
-                width: 25vw;
-                margin: 5px;
-                border-left: 1px solid black;
-                border-top: 1px solid black;
-                background-color: lightgrey;
-                display: flex;
-                flex-direction: column;
-            }
-            .mainrightarticles {
-                flex: 16.66%;
-                padding: 5px;
-            }
-        /*Main Left Column*/
-            .mainleftcolumn {
-                flex-grow: 4;
-                margin: 5px;
-                width: 75%;
-            }
-            .leftcolumntext {
-                margin: 10px;
-                font-size: 20px;
-            }
+        /*Featured Columns*/
+.main {
+    display: flex;
+    align-items: flex-start;
+}
+.featuredcolumn img{
+    flex: 50%;
+    margin: 0px;
+    object-fit: scale-down;
+      
+}
+
+
+  
+            
     /*Other Articles Side Bar*/
             .otherarticlebody {
                 margin: 8px;
             }
-    /*Big Articles Picture Row*/
-        * {
-            box-sizing: border-box;
-        }
-        .picrow {
-            display: flex;
-        }
-        .bigarticlepics {
-            flex: 33.33%;
-            padding: 5px;
-            width: 100%;
-        }
-/*---------------------------------*/
+
 
 /*bottom articles*/
 * {
