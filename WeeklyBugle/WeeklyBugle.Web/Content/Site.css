@@ -75,6 +75,7 @@ p.indexSubHeader{
     font-size: 4vw;
     color: ghostwhite;
     font-family: 'Antic Didone';
+     text-shadow: 1px 1px 1px #ccc;
 }
 .tex2style {
     font-size: 0.8vw;
@@ -128,10 +129,13 @@ p.indexSubHeader{
                 border-left: 1px solid black;
                 border-top: 1px solid black;
                 background-color: lightgrey;
+                display: flex;
+                flex-direction: column;
             }
-            .rightcolumntext {
-    margin: 10px;
-}
+            .mainrightarticles {
+                flex: 16.66%;
+                padding: 5px;
+            }
         /*Main Left Column*/
             .mainleftcolumn {
                 flex-grow: 4;
