@@ -5,6 +5,7 @@
 body {
     padding-top: 0px;
     padding-bottom: 20px;
+    background: url('../Content/texture.png') repeat 0 0;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -110,10 +111,20 @@ p.indexSubHeader{
         margin: 15px;
         left: 0;
         right: 0;
-        top: 20%; /* Adjust this value to move the positioned div up and down */
+        top: 5%; /* Adjust this value to move the positioned div up and down */
         width: 100%;
         text-align: left;
     }
+/* .banner .text2 {
+        position: absolute;
+        z-index: 999;
+        margin: 10px;
+        left: 0;
+        right: 0;
+        top: 50%;
+        width: 100%;
+        text-align: left;
+    }*/
 /*---------------------------------*/
 
 
@@ -159,7 +170,40 @@ p.indexSubHeader{
 /*---------------------------------*/
 
 /*bottom articles*/
-        .bottomarticles {
-            margin: 10px;
-        }
+* {
+    box-sizing: border-box;
+}
+.bottomarticlesoverall {
+    display: flex;
+}
+.bottomarticlesright {
+    flex: 60%;
+}
+.bottomarticlesleft{
+    flex: 40%;
+
+}
+  .bottomarticlesrow {
+      display: flex;
+      flex-direction: row;
+      justify-content:flex-start;
+  }
+   
+    .bottomarticles {
+        flex: 33.33%;
+        padding: 2.5px;
+        width: 100%;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .bottomarticleseperation {
+        flex: 50%;
+        padding: 2.5px;
+        width: 100%;
+        align-self: flex-start;
+
+    }
 /*---------------------------------*/
