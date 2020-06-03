@@ -1,11 +1,12 @@
 ﻿@font-face {
-    src:url('../fonts/AnticDidone-Regular.ttf');
+    src: url('../fonts/AnticDidone-Regular.ttf');
     font-family: 'AnticFont';
 }
+
 body {
     padding-top: 0px;
-    padding-bottom: 20px;
-   
+    padding-bottom: 0px;
+    width: 100%;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -28,25 +29,27 @@ select,
 textarea {
     max-width: 280px;
 }
-.leadcustom{
+
+.leadcustom {
     margin: 0px;
     padding: 0px;
-
 }
-.leadcustom > .lead {
 
-}
-    h1.indexHeader {
-        font-size: 65px;
-        font-family: AnticFont;
-        margin: 0, 20px, 0, 0;
+    .leadcustom > .lead {
     }
-p.indexSubHeader{
-    font-family:'Microsoft Himalaya';
+
+h1.indexHeader {
+    font-size: 65px;
+    font-family: AnticFont;
+    margin: 0, 20px, 0, 0;
+}
+
+p.indexSubHeader {
+    font-family: 'Microsoft Himalaya';
     font-size: 20px;
 }
 
-.whole{
+.whole {
     padding: 0px;
 }
 
@@ -64,7 +67,6 @@ p.indexSubHeader{
     .text2:hover {
         opacity: 1;
         transform: translateY(20px);
-        
     }
 /*---------------------------------*/
 
@@ -73,14 +75,16 @@ p.indexSubHeader{
     font-size: 4vw;
     color: ghostwhite;
     font-family: 'Antic Didone';
-     text-shadow: 1px 1px 1px #ccc;
+    text-shadow: 1px 1px 1px #ccc;
 }
+
 .tex2style {
     font-size: 0.8vw;
     color: ghostwhite;
     font-family: 'Antic Didone';
     opacity: 1;
 }
+
 .banner {
     width: 100%;
     height: 30%;
@@ -88,6 +92,7 @@ p.indexSubHeader{
     position: relative;
     display: inline-block; /* Make the width of box same as image */
 }
+
     .banner > .headerbanner {
         width: 100%;
         height: 30%;
@@ -95,6 +100,7 @@ p.indexSubHeader{
         height: 5%;
         padding: 0px;
     }
+
     .banner .text {
         position: absolute;
         z-index: 999;
@@ -106,7 +112,8 @@ p.indexSubHeader{
         text-align: left;
         transition-duration: 3s;
     }
- .banner .text2 {
+
+    .banner .text2 {
         position: absolute;
         z-index: 999;
         margin: 20px;
@@ -118,62 +125,85 @@ p.indexSubHeader{
     }
 /*---------------------------------*/
 
-/*Two Main Columns*/
-        /*Featured Columns*/
-.main {
+/*Featured Articles*/
+.featuredbox {
     display: flex;
-    align-items: flex-start;
-}
-.featuredcolumn img{
-    flex: 50%;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0px;
     margin: 0px;
-    object-fit: scale-down;
-      
 }
 
-
-  
-            
-    /*Other Articles Side Bar*/
-            .otherarticlebody {
-                margin: 8px;
-            }
-
-
-/*bottom articles*/
-* {
-    box-sizing: border-box;
+.featuredarticle {
+    flex: 50%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
 }
-.bottomarticlesoverall {
+
+    .featuredarticle img {
+        object-fit: contain;
+    }
+
+/*Bottom Articles*/
+.bottomarticles {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
 }
-.bottomarticlesright {
-    flex: 60%;
-}
-.bottomarticlesleft{
-    flex: 40%;
 
+.otherImages {
+    flex: 75%;
+    width: 35%;
+    height: 100%;
 }
-  .bottomarticlesrow {
-      display: flex;
-      flex-direction: row;
-      justify-content:flex-start;
-  }
-    .bottomarticles {
-        flex: 33.33%;
-        padding: 2.5px;
-        width: 100%;
-        align-self: flex-start;
-        display: flex;
-        flex-direction: column;
-        
 
+.otherImages {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.oderImages {
+    flex: 33.33%;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+    .oderImages > .oderImages img {
+        object-fit: scale-down;
+        height: 100%;
     }
-    .bottomarticleseperation {
-        flex: 50%;
-        padding: 2.5px;
-        width: 100%;
-        align-self: flex-start;
 
-    }
-/*---------------------------------*/
+.otherArticles {
+    flex: 25%;
+    height: 100%;
+}
+
+.otherArticles {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 3px solid black;
+    height: 100%;
+}
+
+.otherArticlesArticle {
+    flex: 33.33%;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.HeaderOtherArticle {
+    font-family: 'Times New Roman';
+}
+
+.BodyOtherArticle {
+    font-family: Calibri;
+}
