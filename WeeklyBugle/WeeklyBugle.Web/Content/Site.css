@@ -137,6 +137,7 @@ p.indexSubHeader {
 .featuredarticle {
     flex: 50%;
     width: 100%;
+    height: 100%;
     padding: 0px;
     margin: 0px;
 }
@@ -166,6 +167,7 @@ p.indexSubHeader {
     flex-direction: row;
     justify-content: flex-start;
     height: 100%;
+    width: 100%;
 }
 
 .oderImages {
@@ -175,14 +177,14 @@ p.indexSubHeader {
     padding: 0px;
 }
 
-    .oderImages > .oderImages img {
+    .oderImages img{
         object-fit: scale-down;
-        height: 100%;
     }
 
 .otherArticles {
     flex: 25%;
     height: 100%;
+    width: 100%;
 }
 
 .otherArticles {
@@ -191,6 +193,7 @@ p.indexSubHeader {
     flex-direction: column;
     border: 3px solid black;
     height: 100%;
+    width: 100%;
 }
 
 .otherArticlesArticle {
