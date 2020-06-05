@@ -18,10 +18,10 @@ body {
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
-.dl-horizontal dt {
+/*.dl-horizontal dt {
     white-space: normal;
 }
-
+    */
 /* Set width on the form input elements since they're 100% wide by default */
 /*Basic shit*/
 input,
@@ -91,6 +91,7 @@ p.indexSubHeader {
     display: block;
     position: relative;
     display: inline-block; /* Make the width of box same as image */
+    margin: 0px;
 }
 
     .banner > .headerbanner {
@@ -132,6 +133,7 @@ p.indexSubHeader {
     justify-content: flex-start;
     padding: 0px;
     margin: 0px;
+    font-size: 0px;
 }
 
 .featuredarticle {
@@ -140,10 +142,15 @@ p.indexSubHeader {
     height: 100%;
     padding: 0px;
     margin: 0px;
+    display: inline-block;
+    font-size: 0px;
 }
 
     .featuredarticle img {
         object-fit: contain;
+        display: inline-block;
+        margin: 0px;
+        font-size: 0px;
     }
 
 /*Bottom Articles*/
@@ -154,20 +161,23 @@ p.indexSubHeader {
     padding: 0px;
     margin: 0px;
     height: 100%;
+
 }
 
 .otherImages {
     flex: 75%;
     width: 35%;
     height: 100%;
+    font-size: 0px;
 }
 
 .otherImages {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     height: 100%;
     width: 100%;
+    justify-content: space-between;
+    font-size: 0px;
 }
 
 .oderImages {
@@ -175,10 +185,13 @@ p.indexSubHeader {
     width: 100%;
     height: 100%;
     padding: 0px;
+    font-size: 0px;
 }
 
-    .oderImages img{
+    .oderImages img {
         object-fit: scale-down;
+        margin: 0px;
+        font-size: 0px;
     }
 
 .otherArticles {
@@ -198,7 +211,7 @@ p.indexSubHeader {
 
 .otherArticlesArticle {
     flex: 33.33%;
-    padding: 5px;
+    padding: 0px;
     width: 100%;
     height: 100%;
 }
