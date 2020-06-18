@@ -37,6 +37,11 @@
         </footer>
     </div>
 
+    <script src="~/Scripts/Client/runtime.js" type="module"></script>
+    <script src="~/Scripts/Client/polyfills.js" type="module"></script>
+    <script src="~/Scripts/Client/styles.js" type="module"></script>
+    <script src="~/Scripts/Client/vendor.js" type="module"></script>
+    <script src="~/Scripts/Client/main.js" type="module"></script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

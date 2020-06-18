@@ -147,7 +147,7 @@ p.indexSubHeader {
 }
 
     .featuredarticle img {
-        object-fit: contain;
+        object-fit: cover;
         display: inline-block;
         margin: 0px;
         font-size: 0px;
